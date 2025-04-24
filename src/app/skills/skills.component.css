@@ -1,34 +1,118 @@
 .skills-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .skill-card {
-  background-color: #fff;
-  border-left: 4px solid #c8102e;
-  padding: 1rem;
+  background: linear-gradient(to right, #ffffff 0%, #f8fafc 100%);
+  border-left: 5px solid #4a6fa5;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(74, 111, 165, 0.15);
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(74, 111, 165, 0.03) 0%, transparent 100%);
+  z-index: 0;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
 }
 
 .skill-name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.skill-name::before {
+  content: "⚙️";
+  font-size: 1.3rem;
 }
 
 .skill-category {
   font-style: italic;
-  color: #777;
+  color: #4a5568;
+  background-color: rgba(74, 111, 165, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
 
 .skill-fill {
   height: 100%;
-  background-color: #c8102e;
+  background: linear-gradient(90deg, #4a6fa5, #6b8cce);
   width: 0;
-  transition: width 0.5s ease;
+  border-radius: 10px;
+  transition: width 1s cubic-bezier(0.65, 0, 0.35, 1);
+  box-shadow: 0 2px 5px rgba(74, 111, 165, 0.3);
+}
+
+.skill-card:hover .skill-fill {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  100% { opacity: 0.8; }
 }
 
 .skill-meta {
-  font-size: 0.85rem;
-  color: #555;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-level {
+  font-weight: 500;
+  color: #4a6fa5;
+}
+
+.skill-experience {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.skill-experience::before {
+  content: "⏳";
+  font-size: 0.9rem;
 }

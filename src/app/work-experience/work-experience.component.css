@@ -1,36 +1,124 @@
 .work-experience-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .work-card {
-  background-color: #fff;
-  border-left: 4px solid #c8102e;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: linear-gradient(to right, #ffffff 0%, #f8fafc 100%);
+  border-left: 5px solid #4a6fa5;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(74, 111, 165, 0.15);
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(74, 111, 165, 0.03) 0%, transparent 100%);
+  z-index: 0;
 }
 
 .work-header {
   display: flex;
   justify-content: space-between;
-  font-size: 1.05rem;
-  font-weight: bold;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  position: relative;
+  z-index: 1;
+}
+
+.work-position {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.work-position::before {
+  content: "💼";
+  font-size: 1.4rem;
 }
 
 .work-company {
   font-style: italic;
-  color: #444;
+  color: #4a5568;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.work-company::before {
+  content: "🏢";
+  font-size: 1.2rem;
 }
 
 .work-dates {
-  color: #777;
+  color: white;
+  background-color: #4a6fa5;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.work-description {
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .work-description ul {
-  padding-left: 1.2rem;
-  list-style: disc;
-  color: #333;
+  padding-left: 2rem;
+  list-style: none;
+}
+
+.work-description li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.work-description li::before {
+  content: "▹";
+  position: absolute;
+  left: -1.5rem;
+  color: #4a6fa5;
+  font-weight: bold;
+}
+
+.work-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.work-skill {
+  background-color: rgba(74, 111, 165, 0.1);
+  color: #4a6fa5;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }

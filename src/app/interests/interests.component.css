@@ -1,22 +1,44 @@
 .interests-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .interests-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .interest-card {
-  background-color: #fff;
-  border-left: 4px solid #c8102e;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: linear-gradient(to right, #ffffff 0%, #f8fafc 100%);
+  border-left: 5px solid #4a6fa5;
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.interest-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(to right, #f8fafc 0%, #ffffff 100%);
+}
+
+.interest-card::before {
+  content: "•";
+  color: #4a6fa5;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  line-height: 0;
 }
 
 .interest-name {
-  font-size: 1.05rem;
-  color: #222;
+  font-size: 1.1rem;
+  color: #2d3748;
+  font-weight: 500;
+  margin: 0;
+  flex-grow: 1;
 }

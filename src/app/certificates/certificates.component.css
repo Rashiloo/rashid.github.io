@@ -1,40 +1,103 @@
 .certificates-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .certificate-card {
-  background-color: #fff;
-  border-left: 4px solid #c8102e;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: linear-gradient(to right, #ffffff 0%, #f8fafc 100%);
+  border-left: 5px solid #4a6fa5;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(74, 111, 165, 0.15);
+}
+
+.certificate-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4a6fa5, #6b8cce);
 }
 
 .certificate-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .certificate-name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.certificate-name::before {
+  content: "📜";
+  font-size: 1.3rem;
+}
+
+.certificate-date {
+  background-color: #4a6fa5;
+  color: white;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .certificate-institution {
   font-style: italic;
-  color: #777;
-  font-size: 0.95rem;
+  color: #4a5568;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.certificate-institution::before {
+  content: "🏢";
+  font-size: 1.1rem;
 }
 
 .certificate-details {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-top: 1rem;
+  line-height: 1.6;
+  padding-top: 0.8rem;
+  border-top: 1px dashed rgba(74, 111, 165, 0.2);
 }
 
-.certificate-date,
 .certificate-description {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-id {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #4a6fa5;
+  background-color: rgba(74, 111, 165, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 0
 }

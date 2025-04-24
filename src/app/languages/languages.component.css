@@ -1,19 +1,56 @@
 .languages-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .language-card {
-  background-color: #fff;
-  border-left: 4px solid #c8102e;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: linear-gradient(to right, #ffffff 0%, #f8fafc 100%);
+  border-left: 5px solid #4a6fa5;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.language-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .language-header {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
 }
 
+.language-name {
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.language-name::before {
+  content: "🌐";
+  font-size: 1.2rem;
+}
+
+.language-level {
+  background-color: #4a6fa5;
+  color: white;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.language-details {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-left: 1.8rem;
+}
