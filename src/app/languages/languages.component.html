@@ -1,0 +1,10 @@
+<div class="languages-section">
+  <div class="section-title"> <h3>Idiomas</h3> </div>
+
+  <div *ngFor="let lan of languages" class="language-card">
+    <div class="language-header">
+      <div class="language-name"><b>{{ lan.language }}</b></div>
+      <div class="language-proficiency">Nivel: {{ lan.level }}</div>
+    </div>
+  </div>
+</div>

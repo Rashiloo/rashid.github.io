@@ -1,0 +1,56 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-bottom: 4px solid #c8102e;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px solid #c8102e;
+  object-fit: cover;
+}
+
+.personal-info .name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.goal {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #555;
+  max-width: 400px;
+}
+
+.header-right {
+  font-size: 0.95rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #c8102e;
+  font-weight: bold;
+}

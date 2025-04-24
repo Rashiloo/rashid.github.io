@@ -1,0 +1,16 @@
+<div class="skills-section">
+  <div class="section-title"> <h3>Habilidades y Competencias</h3> </div>
+
+  <div *ngFor="let ski of skills" class="skill-card">
+      <div class="skill-name">
+        <b>{{ ski.skill }}</b>
+      </div>
+
+    <div class="skill-progress">
+      </div>
+      <div class="skill-meta">
+        Nivel: {{ ski.level }}
+      </div>
+  </div>
+</div>
+

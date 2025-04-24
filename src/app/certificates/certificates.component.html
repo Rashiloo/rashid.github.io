@@ -1,0 +1,24 @@
+<div class="certificates-section">
+  <div class="section-title"> <h3>Certificaciones</h3> </div>
+
+  <div *ngFor="let cer of certificate" class="certificate-card">
+    <div class="certificate-header">
+      <div class="certificate-name">
+        <b>{{ cer.name }}</b>
+      </div>
+      <div class="certificate-institution">
+        Emitido por: {{ cer.institution }}
+      </div>
+    </div>
+
+    <div class="certificate-details">
+      <div class="certificate-date">
+        <span><b>Fecha de emisión:</b> {{ cer.date }}</span><br />
+        
+      </div>
+      <div class="certificate-description">
+        <span><b>Descripcion:</b> {{ cer.description || 'No expiración' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

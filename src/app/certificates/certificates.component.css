@@ -1,0 +1,40 @@
+.certificates-section {
+  margin-bottom: 2rem;
+}
+
+.certificate-card {
+  background-color: #fff;
+  border-left: 4px solid #c8102e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.certificate-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.certificate-name {
+  font-size: 1.1rem;
+}
+
+.certificate-institution {
+  font-style: italic;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.certificate-details {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.certificate-date,
+.certificate-description {
+  margin-bottom: 0.25rem;
+}

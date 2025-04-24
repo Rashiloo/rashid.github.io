@@ -1,0 +1,20 @@
+<div class="header-container">
+  <!-- Sección izquierda con imagen y nombre -->
+  <div class="header-left">
+    <img [src]="header.photoUrl" alt="Foto de perfil" class="profile-image" />
+    <div class="personal-info">
+      <h1 class="name">{{ header.name }}</h1>
+      <p class="goal">{{ header.goalLife }}</p>
+    </div>
+  </div>
+
+  <!-- Sección derecha con los datos de contacto -->
+  <div class="header-right">
+    <ul class="contact-list">
+      <li><span class="icon">📧</span> {{ header.email }}</li>
+      <li><span class="icon">📞</span> {{ header.phoneNumber }}</li>
+      <li><span class="icon">📍</span> {{ header.location }}</li>
+      <li><span class="icon">🌐</span> {{ header.socialNetwork }}</li>
+    </ul>
+  </div>
+</div>
