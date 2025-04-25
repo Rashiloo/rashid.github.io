@@ -62,6 +62,7 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
+              "baseHref": "/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
